@@ -13,7 +13,7 @@ xegaDfGeneMapFactory(method = "Identity")
 Gene map function for genes.
 }
 \description{
-\code{xegaDfGeneMapFactory} implements the selection
+\code{xegaDfGeneMapFactory()} implements the selection
              of one of the GeneMap functions in this
              package by specifying a text string.
              The selection fails ungracefully (produces
@@ -23,7 +23,7 @@ Gene map function for genes.
              Current support:
 
              \enumerate{
-             \item "Identity" returns \code{GeneMapIdentity}. (Default)
+             \item "Identity" returns \code{GeneMapIdentity()}. (Default)
              }
 }
 \examples{

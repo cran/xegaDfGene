@@ -13,13 +13,13 @@ xegaDfReplicationFactory(method = "DE")
 A replication function for genes.
 }
 \description{
-\code{ReplicationFactory} implements the selection
+\code{xegaDfReplicationFactory()} implements the selection
              of a replication method. 
 
              Current support:
 
              \enumerate{
-             \item "DE" returns \code{ReplicateGeneDE}.
+             \item "DE" returns \code{xegaDfReplicateGeneDE()}.
              }
 }
 \examples{

@@ -13,21 +13,25 @@ xegaDfCrossoverFactory(method = "UCrossGene")
 Crossover function for genes.
 }
 \description{
-\code{xegaDfCrossoverFactory} implements the selection
+\code{xegaDfCrossoverFactory()} implements the selection
              of one of the crossover functions in this
              package by specifying a text string.
              The selection fails ungracefully (produces
-             a runtime error), if the label does not match.
+             a runtime error) if the label does not match.
              The functions are specified locally.
 
              Current support:
 
              Crossover functions with one kid:
              \enumerate{
-             \item "CrossGene" returns \code{CrossGene}.
-             \item "UCrossGene" returns \code{UCrossGene}. Default.
-             \item "PUCrossGene" returns \code{PUCrossGene}.
+             \item "CrossGene" returns \code{CrossGene()}.
+             \item "UCrossGene" returns \code{UCrossGene()}. Default.
+             \item "UPCrossGene" returns \code{UPCrossGene()}.
              }
+}
+\details{
+All crossover operations return a 1 kid. This implies that 
+         some part of the genetic material is lost.
 }
 \examples{
 XGene<-xegaDfCrossoverFactory("UCrossGene")

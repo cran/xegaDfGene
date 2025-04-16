@@ -2,6 +2,7 @@
 % Please edit documentation in R/xegaDfGene-package.R
 \docType{package}
 \name{xegaDfGene}
+\alias{xegaDfGene-package}
 \alias{xegaDfGene}
 \title{Package xegaDfGene.}
 \description{
@@ -26,20 +27,20 @@ Functions for differential evolution (de). See Price et al. (2005).
            
 A real-coded gene is a named list:
   \itemize{
-   \item $gene1      the gene must be a vector of reals.
-   \item $fit        the fitness value of the gene
+   \item \code{$gene1}:      the gene must be a vector of reals.
+   \item \code{$fit}:        the fitness value of the gene
                      (for EvalGeneDet and EvalGeneU) or
                      the mean fitness (for stochastic functions
                      evaluated with EvalGeneStoch).
-   \item $evaluated  has the gene been evaluated?
-   \item $evalFail   has the evaluation of the gene failed?
-   \item $var        the cumulative variance of the fitness 
+   \item \code{$evaluated}:  has the gene been evaluated?
+   \item \code{$evalFail}:   has the evaluation of the gene failed?
+   \item \code{$var}:        the cumulative variance of the fitness 
                      of all evaluations of a gene.
                      (For stochastic functions)
-   \item $sigma      the standard deviation of the fitness of 
+   \item \code{$sigma}:      the standard deviation of the fitness of 
                      all evaluations of a gene.
                      (For stochastic functions)
-   \item $obs        the number evaluations of a gene.
+   \item \code{$obs}:        the number of evaluations of a gene.
                      (For stochastic functions)
   }
 }
@@ -67,7 +68,7 @@ A problem environment \code{penv} must provide:
           Used in \code{GeneMap}.
     \item $lb(): The lower bound vector of each parameter.
           Used in \code{GeneMap}.
-    \item $ub(): The upper bound vector of each paremeter.
+    \item $ub(): The upper bound vector of each parameter.
           Used in \code{GeneMap}.
   }
 }
@@ -97,7 +98,7 @@ population-related functionality as well as support for
 population statistics dependent adaptive mechanisms and parallelization.
 
 \item 
-The gene layer is split in a representation-independent and 
+The gene layer is split into a representation-independent and 
 a representation-dependent part:
 \enumerate{
 \item 
@@ -143,6 +144,13 @@ The Differential Evolution Algorithm (Chapter 2), pp. 37-134.
 In: Differential Evolution. A Practical Approach to Global Optimization.
 Springer, Berlin.
 <doi:10.1007/3-540-31306-0>
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ageyerschulz/xegaDfGene}
+}
+
 }
 \author{
 Andreas Geyer-Schulz

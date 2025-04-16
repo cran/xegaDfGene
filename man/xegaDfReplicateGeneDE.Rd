@@ -7,7 +7,7 @@
 xegaDfReplicateGeneDE(pop, fit, lF)
 }
 \arguments{
-\item{pop}{Population of binary genes.}
+\item{pop}{Population of real-coded genes.}
 
 \item{fit}{Fitness vector.}
 
@@ -17,7 +17,7 @@ xegaDfReplicateGeneDE(pop, fit, lF)
 A list of one gene.
 }
 \description{
-\code{ReplicateGeneDE} replicates a gene. Replication
+\code{xegaDfReplicateGeneDE()} replicates a gene. Replication
              is the reproduction function which uses crossover and
              mutation. The control flow of differential evolution 
              is as follows:

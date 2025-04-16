@@ -21,10 +21,11 @@ parm<-function(x){function() {return(x)}}
 lF<-list()
 lF$ScaleFactor1<-parm(0.90)
 UniformRandomScaleFactor(lF)
+lF$ScaleFactor1<-parm(1.10)
 UniformRandomScaleFactor(lF)
 }
 \seealso{
-Other ScaleFactor: 
+Other Scale Factor: 
 \code{\link{ConstScaleFactor}()}
 }
-\concept{ScaleFactor}
+\concept{Scale Factor}

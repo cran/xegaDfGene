@@ -13,7 +13,7 @@ xegaDfScaleFactorFactory(method = "Const")
 A scale factor function for genes.
 }
 \description{
-\code{xegaDfScaleFactorFactory} implements the selection
+\code{xegaDfScaleFactorFactory()} implements the selection
              of one of the scale factor functions in this
              package by specifying a text string.
              The selection fails ungracefully (produces
@@ -23,8 +23,8 @@ A scale factor function for genes.
              Current support:
 
              \enumerate{
-             \item "Const" returns \code{ConstScaleFactor}.
-             \item "Uniform" returns \code{UniformRandomScaleFactor}.
+             \item "Const" returns \code{ConstScaleFactor()}.
+             \item "Uniform" returns \code{UniformRandomScaleFactor()}.
              }
 }
 \details{
@@ -32,6 +32,8 @@ In the literature, several approaches have been suggested.
          For a review see Sharma et al. (2019).
 }
 \examples{
+f<-xegaDfScaleFactorFactory("Const")
+f(lFxegaDfGene)
 f<-xegaDfScaleFactorFactory("Uniform")
 f(lFxegaDfGene)
 f(lFxegaDfGene)

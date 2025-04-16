@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------
+  xegaDfGene                                                       News
+-------------------------------------------------------------------------
+
+Version 1.0.0.1 (2024-02-07)
+
+- xegaDfCrossGene: 
+       Upper limit of sampling interval for determining 
+       1-point crossover  decreased by 1.
+       Consequence: Genes must be mixed.
+
+Version 1.0.0.2 (2024-02-19)
+
+- Multiple improvements in the documentation of functions.
+
+Version 1.0.0.2 (2025-04-14)
+
+- xegaGedeInitGene: Initialization function for algorithm="sgede".
+- lFxegaDfGene:     Added Codons() and CodonPrecision().
+
+- 

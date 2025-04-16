@@ -7,18 +7,18 @@
 xegaDfDecodeGene(gene, lF)
 }
 \arguments{
-\item{gene}{Real gene}
+\item{gene}{Real gene.}
 
-\item{lF}{Local configuration of the genetic algorithm}
+\item{lF}{Local configuration of the genetic algorithm.}
 }
 \value{
 Decoded gene.
 }
 \description{
-\code{xegaDfDecodeGene} decodes a real gene.
+\code{xegaDfDecodeGene()} decodes a real gene.
 }
 \details{
-\code{xegaDfDecodeGene} is the identy function.
+\code{xegaDfDecodeGene()} is the identity function.
 }
 \examples{
 gene<-xegaDfInitGene(lFxegaDfGene)

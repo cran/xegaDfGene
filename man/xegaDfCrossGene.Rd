@@ -17,7 +17,7 @@ xegaDfCrossGene(gg1, gg2, lF)
 Real-coded gene.
 }
 \description{
-\code{CrossGene} randomly determines a cut point.
+\code{xegaDfCrossGene()} randomly determines a cut point.
     It combines the parameters before the cut point of the first gene
     with the parameters after the cut point from the second gene (kid 1).
 }
@@ -27,8 +27,8 @@ gene2<-xegaDfInitGene(lFxegaDfGene)
 gene3<-xegaDfCrossGene(gene1, gene2, lFxegaDfGene)
 }
 \seealso{
-Other Crossover (1): 
+Other Crossover (Returns 1 Kid): 
 \code{\link{xegaDfUCrossGene}()},
 \code{\link{xegaDfUPCrossGene}()}
 }
-\concept{Crossover (1)}
+\concept{Crossover (Returns 1 Kid)}

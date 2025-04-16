@@ -19,12 +19,12 @@ xegaDfMutateGeneDE(gene0, gene1, gene2, lF)
 Real-coded gene.
 }
 \description{
-\code{xegaDfMutateGeneDE} mutates a real-coded gene.
-              The scale factor is given by Scalefactor().
+\code{xegaDfMutateGeneDE()} mutates a real-coded gene.
+              The scale factor is given by \code{lF$ScaleFactor()}.
 }
 \details{
-The difference of gene1 and gene2 is scaled by 
-          ScaleFactor() and added to gene0.
+The difference between gene1 and gene2 is scaled by 
+          \code{lF$ScaleFactor()} and added to gene0.
 }
 \examples{
 gene0<-xegaDfInitGene(lFxegaDfGene)

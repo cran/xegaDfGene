@@ -17,7 +17,7 @@ xegaDfUCrossGene(gg1, gg2, lF)
 Real-coded gene.
 }
 \description{
-\code{UCrossGene} swaps alleles of both genes
+\code{xegaDfUCrossGene()} swaps alleles of both genes
              with a probability of 0.5. It generates a random 
              mask which is used to build the new gene.
 }
@@ -35,8 +35,8 @@ Syswerda, Gilbert (1989):
   (ISBN:1-55860-066-3)
 }
 \seealso{
-Other Crossover (1): 
+Other Crossover (Returns 1 Kid): 
 \code{\link{xegaDfCrossGene}()},
 \code{\link{xegaDfUPCrossGene}()}
 }
-\concept{Crossover (1)}
+\concept{Crossover (Returns 1 Kid)}

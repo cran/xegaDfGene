@@ -13,7 +13,7 @@ xegaDfMutationFactory(method = "MutateGene")
 A mutation function for genes.
 }
 \description{
-\code{xegaDfMutationFactory} implements the selection
+\code{xegaDfMutationFactory()} implements the selection
              of one of the mutation functions in this
              package by specifying a text string.
              The selection fails ungracefully (produces
@@ -23,10 +23,10 @@ A mutation function for genes.
              Current support:
 
              \enumerate{
-             \item "MutateGene" returns \code{xegaDfMutateGeneDE}.
+             \item "MutateGene" returns \code{xegaDfMutateGeneDE()}.
                    To provide a working default for more than 
                    one gene representation.
-             \item "MutateGeneDE" returns \code{xegaDfMutateGeneDE}.
+             \item "MutateGeneDE" returns \code{xegaDfMutateGeneDE()}.
              }
 }
 \examples{

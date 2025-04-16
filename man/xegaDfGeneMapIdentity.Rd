@@ -15,21 +15,17 @@ xegaDfGeneMapIdentity(gene, penv)
 Decoded gene (the phenotype).
 }
 \description{
-\code{GenemapIdentity} maps the real parameter vector
+\code{xegaDfGeneMapIdentity()} maps the real parameter vector
              to an identical vector.
 }
 \details{
 A \emph{gene} is a list with 
          \enumerate{
-         \item \code{$evaluated} Boolean: TRUE if the fitness is known.
-         \item \code{$fit}       The fitness of the genotype of 
-                                 \code{$gene1}         
-         \item \code{$gene1}     a real parameter vector (the genetopye).
+         \item \code{$evaluated}: Boolean. TRUE if the fitness is known.
+         \item \code{$fit}:       The fitness of the genotype of 
+                                 \code{$gene1}.         
+         \item \code{$gene1}:     A real parameter vector (the genotopye).
          }
-
-         This representation simplifies the implementation 
-         af various optimizations
-         and generalizations.
 }
 \examples{
 gene<-xegaDfInitGene(lFxegaDfGene)
