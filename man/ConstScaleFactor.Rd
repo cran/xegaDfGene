@@ -25,6 +25,11 @@ ConstScaleFactor(lF)
 }
 \seealso{
 Other Scale Factor: 
-\code{\link{UniformRandomScaleFactor}()}
+\code{\link{CauchySF}()},
+\code{\link{DETVSF}()},
+\code{\link{FitnessBasedSelfAdaptiveSF}()},
+\code{\link{RandomGaussianSF}()},
+\code{\link{UniformRandomScaleFactor}()},
+\code{\link{UniformRandomScaleFactorDERSF}()}
 }
 \concept{Scale Factor}

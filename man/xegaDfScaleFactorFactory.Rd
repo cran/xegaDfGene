@@ -25,6 +25,11 @@ A scale factor function for genes.
              \enumerate{
              \item "Const" returns \code{ConstScaleFactor()}.
              \item "Uniform" returns \code{UniformRandomScaleFactor()}.
+             \item "DERSF" returns \code{UniformRandomScaleFactorDERSF()}.
+             \item "DEVSF" returns \code{DEVSF()}.
+             \item "CauchySF" returns \code{CauchySF()}.
+             \item "FBSASF" returns \code{FitnessBasedSelfAdaptiveSF()}.
+             \item "RGSF" returns \code{RandomGaussianSF()}.
              }
 }
 \details{

@@ -19,13 +19,16 @@ The scale factor is drawn from
 \examples{
 parm<-function(x){function() {return(x)}}
 lF<-list()
-lF$ScaleFactor1<-parm(0.90)
 UniformRandomScaleFactor(lF)
-lF$ScaleFactor1<-parm(1.10)
 UniformRandomScaleFactor(lF)
 }
 \seealso{
 Other Scale Factor: 
-\code{\link{ConstScaleFactor}()}
+\code{\link{CauchySF}()},
+\code{\link{ConstScaleFactor}()},
+\code{\link{DETVSF}()},
+\code{\link{FitnessBasedSelfAdaptiveSF}()},
+\code{\link{RandomGaussianSF}()},
+\code{\link{UniformRandomScaleFactorDERSF}()}
 }
 \concept{Scale Factor}

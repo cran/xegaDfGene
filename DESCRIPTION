@@ -1,6 +1,6 @@
 Package: xegaDfGene
 Title: Gene Operations for Real-Coded Genes
-Version: 1.0.0.3
+Version: 1.0.0.5
 Authors@R: 
     person(given = "Andreas",
            family = "Geyer-Schulz",
@@ -15,7 +15,8 @@ Description: Representation-dependent gene-level operations
         implements initialization, mutation, crossover, and replication 
         operations for differential evolution as described in
         Price, Kenneth V., Storn, Rainer M. and Lampinen, Jouni A. (2005)
-        <doi:10.1007/3-540-31306-0>. 
+        <doi:10.1007/3-540-31306-0>.  In addition, several (more recent) 
+        methods for determining the scale factor are provided.
 License: MIT + file LICENSE
 URL: https://github.com/ageyerschulz/xegaDfGene
 Encoding: UTF-8
@@ -23,9 +24,9 @@ RoxygenNote: 7.3.2
 Suggests: testthat (>= 3.0.0)
 Imports: xegaSelectGene
 NeedsCompilation: no
-Packaged: 2025-04-16 09:57:24 UTC; dj2333
-Author: Andreas Geyer-Schulz [aut, cre]
-    (<https://orcid.org/0009-0000-5237-3579>)
+Packaged: 2025-07-29 10:56:01 UTC; dj2333
+Author: Andreas Geyer-Schulz [aut, cre] (ORCID:
+    <https://orcid.org/0009-0000-5237-3579>)
 Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
 Repository: CRAN
-Date/Publication: 2025-04-16 10:50:05 UTC
+Date/Publication: 2025-07-29 12:20:02 UTC

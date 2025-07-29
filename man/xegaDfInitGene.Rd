@@ -23,7 +23,8 @@ A real-coded gene (a named list):
 }
 \description{
 \code{xegaDfInitGene()} generates a random real-coded gene 
-             with a given length.
+             with a given length. The length of the gene is the 
+             length of \code{lF$penv$bitlength()}.
 }
 \details{
 In the real-coded representation of 
