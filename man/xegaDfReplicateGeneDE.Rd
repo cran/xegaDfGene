@@ -36,6 +36,9 @@ For \code{selection="UniformP"},
          for \code{accept="Best"}
          this is 
          the algorithm of Price, Storn and Lampinen (2005), page 41.
+  
+         targetGene is selected with \code{lF$SelectGene()},
+         gene0, gene1, and gene2 are selected by \code{lF$SelectMate()}.
 }
 \examples{
 pop10<-lapply(rep(0,10), function(x) xegaDfGene::xegaDfInitGene(lFxegaDfGene))

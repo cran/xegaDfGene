@@ -1,6 +1,6 @@
 Package: xegaDfGene
 Title: Gene Operations for Real-Coded Genes
-Version: 1.0.0.5
+Version: 1.0.0.7
 Authors@R: 
     person(given = "Andreas",
            family = "Geyer-Schulz",
@@ -22,11 +22,11 @@ URL: https://github.com/ageyerschulz/xegaDfGene
 Encoding: UTF-8
 RoxygenNote: 7.3.2
 Suggests: testthat (>= 3.0.0)
-Imports: xegaSelectGene
+Imports: rlang, xegaSelectGene
 NeedsCompilation: no
-Packaged: 2025-07-29 10:56:01 UTC; dj2333
+Packaged: 2025-08-22 08:09:28 UTC; dj2333
 Author: Andreas Geyer-Schulz [aut, cre] (ORCID:
     <https://orcid.org/0009-0000-5237-3579>)
 Maintainer: Andreas Geyer-Schulz <Andreas.Geyer-Schulz@kit.edu>
 Repository: CRAN
-Date/Publication: 2025-07-29 12:20:02 UTC
+Date/Publication: 2025-08-22 10:00:07 UTC

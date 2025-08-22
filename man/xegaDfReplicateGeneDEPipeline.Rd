@@ -50,7 +50,7 @@ For \code{selection="UniformP"},
 pop10<-lapply(rep(0,10), function(x) xegaDfGene::xegaDfInitGene(lFxegaDfGene))
 epop10<-lapply(pop10, lFxegaDfGene$EvalGene, lF=lFxegaDfGene)
 fit10<-unlist(lapply(epop10, function(x) {x$fit}))
-newgenes<-xegaDfReplicateGeneDEPipeline(pop10, fit10, lFxegaDfGene)
+ng<-xegaDfReplicateGeneDEPipeline(pop10, fit10, lFxegaDfGene)
 }
 \references{
 Price, Kenneth V., Storn, Rainer M. and Lampinen, Jouni A. (2005)

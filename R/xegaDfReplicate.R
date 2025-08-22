@@ -27,6 +27,9 @@
 #'          for \code{accept="Best"}
 #'          this is 
 #'          the algorithm of Price, Storn and Lampinen (2005), page 41.
+#'   
+#'          targetGene is selected with \code{lF$SelectGene()},
+#'          gene0, gene1, and gene2 are selected by \code{lF$SelectMate()}.
 #'
 #' @param pop    Population of real-coded genes.
 #' @param fit    Fitness vector.
@@ -53,9 +56,9 @@
 xegaDfReplicateGeneDE<- function(pop, fit, lF)
 {
 targetGene<-pop[[lF$SelectGene(fit, lF)]]
-gene0<-pop[[lF$SelectGene(fit, lF)]]
-gene1<-pop[[lF$SelectGene(fit, lF)]]
-gene2<-pop[[lF$SelectGene(fit, lF)]]
+gene0<-pop[[lF$SelectMate(fit, lF)]]
+gene1<-pop[[lF$SelectMate(fit, lF)]]
+gene2<-pop[[lF$SelectMate(fit, lF)]]
 trialGene<-lF$CrossGene(targetGene,lF$MutateGene(gene0, gene1, gene2, lF))[[1]]
 t1<-lF$EvalGene(trialGene, lF)
     lF$trialGene<-parm(t1)
@@ -112,15 +115,16 @@ t1<-lF$EvalGene(trialGene, lF)
 #' pop10<-lapply(rep(0,10), function(x) xegaDfGene::xegaDfInitGene(lFxegaDfGene))
 #' epop10<-lapply(pop10, lFxegaDfGene$EvalGene, lF=lFxegaDfGene)
 #' fit10<-unlist(lapply(epop10, function(x) {x$fit}))
-#' newgenes<-xegaDfReplicateGeneDEPipeline(pop10, fit10, lFxegaDfGene)
+#' ng<-xegaDfReplicateGeneDEPipeline(pop10, fit10, lFxegaDfGene)
+#' @importFrom rlang env_unbind
 #' @importFrom xegaSelectGene parm
 #' @export
 xegaDfReplicateGeneDEPipeline<- function(pop, fit, lF)
 {
 targetGene<-pop[[lF$SelectGene(fit, lF)]]
-gene0<-pop[[lF$SelectGene(fit, lF)]]
-gene1<-pop[[lF$SelectGene(fit, lF)]]
-gene2<-pop[[lF$SelectGene(fit, lF)]]
+gene0<-pop[[lF$SelectMate(fit, lF)]]
+gene1<-pop[[lF$SelectMate(fit, lF)]]
+gene2<-pop[[lF$SelectMate(fit, lF)]]
 # force
 a<-targetGene
 a<-gene0
@@ -129,7 +133,7 @@ a<-gene2
 # end of force
 Pipeline<-function(lF)
 {
-trialGene<-lF$CrossGene(targetGene,lF$MutateGene(gene0, gene1, gene2, lF))[[1]]
+trialGene<-lF$CrossGene(targetGene,lF$MutateGene(gene0, gene1, gene2, lF), lF)[[1]]
 t1<-lF$EvalGene(trialGene, lF)
     lF$trialGene<-parm(t1)
     OperatorPipeline<-function(g, lF) {lF$trialGene()}   
@@ -146,6 +150,7 @@ t1<-lF$EvalGene(trialGene, lF)
     return(t2)
     #return(lF$Accept(OperatorPipeline, targetGene, lF))
 }
+  rlang::env_unbind(environment(Pipeline), c("lF", "a", "pop", "fit"))
 return(Pipeline)
 }
 
